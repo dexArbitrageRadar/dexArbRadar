@@ -1,0 +1,92 @@
+[
+  {
+    "key": "bnb-usdc-wbnb-v2v3-500",
+    "pairName": "USDC–WBNB",
+    "chain": "bnb",
+    "rpc": "https://bsc-dataseed.bnbchain.org",
+    "token0": {
+      "symbol": "USDC",
+      "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+      "decimals": 18
+    },
+    "token1": {
+      "symbol": "WBNB",
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "decimals": 18
+    },
+    "paths": [
+      {
+        "type": "v2",
+        "router": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "label": "PCV2"
+      },
+      {
+        "type": "pcv3",
+        "quoter": "0xB048Bbc1Ee6b733FFfCFb9e9CeF7375518e25997",
+        "fee": 500,
+        "label": "PCV3-0.05%"
+      }
+    ]
+  },
+
+    {
+    "key": "bnb-usdc-wbnb-v3-500vs3000",
+    "pairName": "USDC–WBNB",
+    "chain": "bnb",
+    "rpc": "https://bsc-dataseed.bnbchain.org",
+    "token0": {
+      "symbol": "USDC",
+      "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+      "decimals": 18
+    },
+    "token1": {
+      "symbol": "WBNB",
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "decimals": 18
+    },
+    "paths": [
+      {
+        "type": "pcv3",
+        "quoter": "0xB048Bbc1Ee6b733FFfCFb9e9CeF7375518e25997",
+        "fee": 100,
+        "label": "0.01%"
+      },
+      {
+        "type": "pcv3",
+        "quoter": "0xB048Bbc1Ee6b733FFfCFb9e9CeF7375518e25997",
+        "fee": 500,
+        "label": "0.05%"
+      }
+    ]
+  },
+
+  {
+    "key": "bnb-usdc-cake-v2v3",
+    "pairName": "WBNB–CAKE",
+    "chain": "bnb",
+    "rpc": "https://rpc.ankr.com/bsc/a2228ed3ee385ce7fa4931fbcfefeacbbb5013fb325cf5c12e392667d149910c",
+    "token0": {
+      "symbol": "WBNB",
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "decimals": 18
+    },
+    "token1": {
+      "symbol": "CAKE",
+      "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "decimals": 18
+    },
+    "paths": [
+      {
+        "type": "v2",
+        "router": "0x10ed43c718714eb63d5aa57b78b54704e256024e",
+        "label": "PCV2"
+      },
+      {
+        "type": "pcv3",
+        "quoter": "0xB048Bbc1Ee6b733FFfCFb9e9CeF7375518e25997",
+        "fee": 500,
+        "label": "0.05%"
+      }
+    ]
+  }
+]

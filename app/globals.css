@@ -19,8 +19,32 @@
   }
 }
 
+
+@font-face {
+  font-family: 'W95FA';
+  src: url('/fonts/W95FA.woff2') format('woff2'),
+       url('/fonts/W95FA.woff') format('woff'),
+       url('/fonts/W95FA.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents flash of unstyled text */
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'W95FA', 'MS Sans Serif', Arial, Helvetica, sans-serif; /* W95FA first, fallback to real MS Sans Serif if available */
+  /* -webkit-font-smoothing: none;  
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: pixelated;     
+  letter-spacing: 0.5px;          */
 }
+
+
+/* @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+  } */
