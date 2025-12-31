@@ -27,4 +27,64 @@
         "label": "UniswapV3"
       }
     ]
-  }]
+  },{
+  "key": "eth-usdt-weth-v2v3",
+  "pairName": "USDT-WETH (UniV2-UniV3)",
+  "chain": "ethereum",
+  "rpc": "https://rpc.ankr.com/eth",
+  "token0": {
+    "symbol": "USDT",
+    "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "decimals": 6
+  },
+  "token1": {
+    "symbol": "WETH",
+    "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "decimals": 18
+  },
+  "paths": [
+    {
+      "type": "v2",
+      "router": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+      "label": "Uniswap V2"
+    },
+    {
+      "type": "v3",
+      "quoter": "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
+      "fee": 500,
+      "label": "Uniswap V3"
+    }
+  ]
+},{
+  "key": "eth-usdc-usdt-v2v3",
+  "pairName": "USDC-USDT (UniV2-UniV3)",
+  "chain": "ethereum",
+  "rpc": "https://rpc.ankr.com/eth",
+  "token0": {
+    "symbol": "USDC",
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "decimals": 6
+  },
+  "token1": {
+    "symbol": "USDT",
+    "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "decimals": 6
+  },
+  "paths": [
+    {
+      "type": "v2",
+      "router": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+      "label": "Uniswap V2"
+    },
+    {
+      "type": "v3",
+      "quoter": "0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6",
+      "fee": 100,
+      "label": "Uniswap V3"
+    }
+  ]
+}
+
+
+
+]
